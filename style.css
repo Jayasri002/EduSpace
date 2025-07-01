@@ -1,0 +1,473 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Nav Bar  & Logo */
+/* Header & Navbar Styles */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1c1d;
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+/* Nav Menu */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 45px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #f3f3f3;
+  color: black;
+  border-radius: 10px;
+}
+
+
+
+/* ---------- Hero Section -----------*/
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(66, 64, 64, 0.6)),
+    url('img/bg\ hero2.jpg') no-repeat center center/cover;
+    height: 500px;
+
+}
+.hero h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 150px;
+}
+
+.hero p{
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+.hero button {
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+
+.hero button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+   
+
+}
+
+/* ------------ Courses ------------*/
+/* Section title */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin: 30px 0 10px;
+  font-family: 'Georgia', serif;
+  color: #1a1c1d;
+}
+
+/* Wrapper around the scroll area and arrows */
+.courses-wrapper {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Course container with horizontal scroll */
+.courses {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+  scrollbar-width: none; /* Firefox */
+}
+.courses::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Course Card */
+.course {
+  background-color: #4e859c;
+  border: 2px solid #0a0a0a;
+  border-radius: 20px;
+  min-width: 250px;
+  max-width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.course img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.course h3 {
+  color: white;
+  margin: 10px 0 5px;
+}
+
+.course p {
+  color: #e2e2e2;
+  font-size: 14px;
+}
+
+.course button{
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid rgb(54, 154, 176)
+}
+
+.course button:hover{
+    box-shadow: 1px 4px;
+    transform: scale(1.05);
+
+}
+
+/* Hover effect */
+.course:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Scroll arrows */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #222;
+  color: white;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10;
+}
+
+.scroll-btn.left {
+  left: -10px;
+}
+
+.scroll-btn.right {
+  right: -10px;
+}
+
+.scroll-btn:hover {
+  background-color: #666;
+}
+
+/* -----------  Why Choose Us ----------*/
+
+.features {
+  background-color: #f4f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0a0a0a;
+  font-family: 'Georgia', serif;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.features li {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+  display: flex;
+  gap: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.features li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.features .icon {
+  font-size: 36px;
+  flex-shrink: 0;
+}
+
+.features li h4 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: #333;
+}
+
+.features li p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* -------------- Testinomials ---------------*/
+.testimonials {
+  background-color: #eef7f6;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  color: #0a0a0a;
+  margin-bottom: 40px;
+  font-family: 'Georgia', serif;
+}
+
+/* Testimonial Card */
+.testimonial {
+  background-color: white;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.testimonial:hover {
+  background-color: #d9f3f3;
+  transform: translateY(-5px);
+}
+
+/* User Image */
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Quote */
+.testimonial blockquote {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Cite */
+.testimonial cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  color: #555;
+  font-weight: bold;
+}
+
+
+/* ----------- Contact Page -----------*/
+.contact {
+  background-color: #f3fafa;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0a0a0a;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #1a9db3;
+  outline: none;
+}
+
+.contact button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  background-color: #1a9db3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #157d91;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact form {
+    padding: 0 10px;
+  }
+}
+
+/* ------------- Footer -------------*/
+.footer {
+  background-color: #1a1c1d;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.footer address {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+}
+
+.footer-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #ddd;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+
+/* ------ responsive behaviour ------*/
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    background-color: #1a1c1d;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+  }
+}

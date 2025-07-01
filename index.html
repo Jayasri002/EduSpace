@@ -1,0 +1,178 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduSpace</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!------------ Header Page with Nav Bar ------------>
+    <header class="home">
+      <div class="header-container">
+        <div class="logo">
+          <img src="img/eduspace logo.png" alt="logo" />
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home"> Home </a></li>
+            <li><a href="#courses"> Courses </a></li>
+            <li><a href="#features"> About Us </a></li>
+            <li><a href="#contact"> Contact </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!------------------ Home Page  ------------------>
+    <section class="hero" id="home">
+      <h2>Explore our EduSpace</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        nihil non magnam, <br />
+        hic facere eos quo suscipit illum commodi, at nulla alias similique
+        maxime voluptate repellat qui minus laboriosam repudiandae.
+      </p>
+
+      <button>Learn More</button>
+    </section>
+
+    <!------------  Course Page  ------------>
+    <section class="courses-wrapper" id="courses">
+      <h2 class="section-title">Popular Courses</h2>
+      <div class="scroll-btn left">&#8592;</div>
+
+      <div class="courses" id="scroll-courses">
+        <div class="course">
+          <img src="img/java.jpg" alt="java course" />
+          <h3>Java</h3>
+          <p>Master OOP concepts and backend development.</p>
+          <button>Join Now</button>
+        </div>
+
+        <div class="course">
+          <img src="img/python.jpg" alt="python course" />
+          <h3>Python</h3>
+          <p>Learn Python for AI, data science & web development.</p>
+          <button>Join Now</button>
+        </div>
+
+        <div class="course">
+          <img src="img/react.jpg" alt="react course" />
+          <h3>React Js</h3>
+          <p>Build interactive UIs with React and components.</p>
+          <button>Join Now</button>
+        </div>
+        <div class="course">
+          <img src="img/frontend.jpg" alt="frontend course" />
+          <h3>Frontend Development</h3>
+          <p>Create beautiful and responsive websites with frontend tools.</p>
+          <button>Join Now</button>
+        </div>
+        <div class="course">
+          <img src="img/c++.jpg" alt="C++ course" />
+          <h3>C++ Progrom</h3>
+          <p>Work with programming languages to have fun.</p>
+          <button>Join Now</button>
+        </div>
+        <div class="course">
+          <img src="img/data.jpg" alt="Data Analysis" />
+          <h3>Data Analysis</h3>
+          <p>Get to know and learn data and data visualization.</p>
+          <button>Join Now</button>
+        </div>
+      </div>
+      <div class="scroll-btn right">&#8594;</div>
+    </section>
+
+    <!------------ Why Choose Us  ------------>
+    <section class="features" id="features">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>
+          <span class="icon">👩‍🏫</span>
+          <div>
+            <h4>Certified Teachers</h4>
+            <p>
+              Learn from experienced and certified instructors in each subject.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">📚</span>
+          <div>
+            <h4>Lifetime Access</h4>
+            <p>Access your course content anytime, forever — no expiry.</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">🎓</span>
+          <div>
+            <h4>Career Support</h4>
+            <p>Get resume tips, interview guidance, and job placement help.</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon">💻</span>
+          <div>
+            <h4>Flexible Learning</h4>
+            <p>Study on your own schedule with mobile and desktop access.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!---------- Testimonials --------->
+    <section class="testimonials" id="testimonial">
+      <h2>What Our Learners Say</h2>
+
+      <div class="testimonial">
+        <img src="img/user1.jpg" alt="User Photo" />
+        <blockquote>
+          “EduSpace completely transformed my career! The instructors are
+          amazing, and I loved the hands-on projects.”
+          <cite>– Aarthi S., Frontend Developer</cite>
+        </blockquote>
+      </div>
+
+      <div class="testimonial">
+        <img src="img/user2.jpg" alt="User Photo" />
+        <blockquote>
+          “The lifetime access allowed me to revisit topics even after I got a
+          job. Highly recommended!”
+          <cite>– Pranav R., Data Analyst</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!----------- Contact Page ----------->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!--------- Footer -------->
+    <footer class="footer">
+      <div class="footer-content">
+        <address>EduSpace HQ, 123 Learning Lane, Chennai, Tamil Nadu</address>
+        <p>&copy; 2025 EduSpace. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
